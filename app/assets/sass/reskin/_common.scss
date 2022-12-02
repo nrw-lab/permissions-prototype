@@ -1,0 +1,41 @@
+// -------------------------------------------------
+// Contents
+// -------------------------------------------------
+//
+// We have re-styled the following:
+//
+//      Links
+//      Buttons
+//      Related items
+//
+// -------------------------------------------------
+
+// Links
+
+// reset colours before re-declaring class 
+$govuk-link-colour: var(--link-colour);
+$govuk-link-visited-colour: var(--link-colour);
+$govuk-link-hover-colour: var(--link-colour);
+$govuk-link-active-colour: var(--link-colour);
+
+%govuk-link {
+    @include govuk-link-common;
+    @include govuk-link-style-default;
+    @include govuk-link-print-friendly;
+}
+
+.govuk-link {
+    @extend %govuk-link;
+}
+
+// Buttons
+
+.govuk-button {
+    background-color: var(--button-colour);
+}
+
+// Other
+
+.app-related-items {
+    border-color: var(--accent-colour);
+}

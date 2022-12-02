@@ -1,0 +1,20 @@
+// top bar
+
+.govuk-header {
+    --header-background-colour: var(--nrw-grey-light);
+    --header-border-colour: var(--nrw-green);
+    background: var(--header-background-colour);
+    border-color: var(--header-border-colour);
+}
+
+.govuk-header__container {
+    --header-border-colour: var(--nrw-green);
+    border-color: var(--header-border-colour);
+}
+
+.govuk-header__logo {
+    .govuk-header__link,
+    .govuk-header__link:visited {
+        color: var(--bold-text-colour);
+    }
+}

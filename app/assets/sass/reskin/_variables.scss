@@ -1,0 +1,15 @@
+// set colours
+
+:root {
+    --theme-colour: #D996C8;
+    --theme-colour: #{$lbm-red};
+    --bold-text-colour: #58595b;
+    --text-colour: #333;
+    --link-colour: #007485;
+    --button-colour: var(--nrw-green);
+    --accent-colour: var(--link-colour);
+
+    --nrw-dark-green: #155547;
+    --nrw-green: #358728;
+    --nrw-grey-light: #E9E9EA;
+}

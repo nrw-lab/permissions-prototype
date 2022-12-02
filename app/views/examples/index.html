@@ -1,0 +1,35 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a href="/" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Example pages
+      </h1>
+      <p>
+        This kit comes with some example pages.
+      </p>
+
+      <p>
+        Use these pages to speed up building your prototype. These pages are based on the <a href="https://design-system.service.gov.uk/patterns" class="app-link">common patterns used by GOV.UK</a>.
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <a href="/examples/start">Start page</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+{% endblock %}
