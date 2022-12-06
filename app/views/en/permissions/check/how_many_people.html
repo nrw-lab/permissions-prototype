@@ -1,5 +1,12 @@
 {% extends "nrw-layout.html" %}
 
+{% block beforeContent %}
+<a href="/en/permissions/check/choose_site" class="govuk-back-link">
+  Back
+  <span class="govuk-visually-hidden"> to Where do you want to do this? </span>
+</a>
+{% endblock %}
+
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
