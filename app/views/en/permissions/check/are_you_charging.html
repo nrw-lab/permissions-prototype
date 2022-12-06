@@ -1,9 +1,49 @@
-{% extends "layout_unbranded.html" %}
+{% extends "nrw-layout.html" %}
 
 {% block content %}
-<h1 class="govuk-heading-l">Are you charging?</h1>
 
-<a href="/en/permissions/check/choose_site" class="govuk-button">Choose site</a>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <form action="" class="govuk-form">
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">
+                        Will you be charging or taking an income from what you’ll be doing?
+                    </h1>
+                </legend>
+                <div id="changed-name-hint" class="govuk-hint">
+                    For example charging people for an event or selling produce you’ve collected.
+                </div>
+                <div class="govuk-radios" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="are-you-charging" name="are-you-charging" type="radio" value="yes">
+                    <label class="govuk-label govuk-radios__label" for="are-you-charging">
+                        Yes
+                    </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="are-you-charging-2" name="are-you-charging" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="are-you-charging-2">
+                        No
+                    </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="are-you-charging-3" name="are-you-charging" type="radio" value="unsure">
+                    <label class="govuk-label govuk-radios__label" for="are-you-charging-3">
+                        I don't know
+                    </label>
+                    </div>
+                </div>
+                </fieldset>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+<a href="/en/permissions/check/choose_site" class="govuk-button">Continue</a>
 
 
 {% endblock %}
