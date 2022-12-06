@@ -1,9 +1,8 @@
-{% extends "layout_unbranded.html" %}
+{% extends "nrw-layout.html" %}
 
 {% block content %}
-<h1 class="govuk-heading-l">Choose site</h1>
 
-<div class="govuk-form-group">
+<!--<div class="govuk-form-group">
     <label class="govuk-label" for="subject">
       Choose location
     </label>
@@ -22,9 +21,30 @@
       <option value="westmidlands">West Midlands</option>
       <option value="yorkshire">Yorkshire and the Humber</option>
     </select>
-  </div>
+  </div>-->
 
-<a href="/en/permissions/check/how_many_people" class="govuk-button">How many people?</a>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Where do you want to do this?</h1>
+    <form action="" method="post" novalidate>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="postcode">
+          Enter the postcode
+        </label>
+        <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="text">
+      </div>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="grid-reference">
+          Enter the grid reference
+        </label>
+        <input class="govuk-input govuk-input--width-10" id="grid-reference" name="grid-reference" type="text">
+      </div>
+    </form>
+  </div>
+</div>
+
+<a href="/en/permissions/check/how_many_people" class="govuk-button">Continue</a>
 
 
 {% endblock %}
