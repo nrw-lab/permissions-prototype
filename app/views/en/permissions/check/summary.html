@@ -1,5 +1,13 @@
 {% extends "nrw-layout.html" %}
 
+
+{% block beforeContent %}
+<a href="/en/permissions/check/start_check" class="govuk-back-link">
+  Back
+  <span class="govuk-visually-hidden"> to How many people will be attending?</span>
+</a>
+{% endblock %}
+
 {% block content %}
 
 <div class="govuk-width-container">
@@ -16,7 +24,7 @@
                 walking
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
+                <a class="govuk-link" href="/en/permissions/check/choose_activity">
                   Change<span class="govuk-visually-hidden">                </span>
                 </a>
               </dd>
@@ -29,7 +37,7 @@
                 No
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
+                <a class="govuk-link" href="/en/permissions/check/are_you_charging">
                   Change<span class="govuk-visually-hidden"> date of birth</span>
                 </a>
               </dd>
@@ -42,7 +50,7 @@
                 Local woods
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
+                <a class="govuk-link" href="/en/permissions/check/choose_site">
                   Change<span class="govuk-visually-hidden"> address</span>
                 </a>
               </dd>
@@ -55,7 +63,7 @@
                 <p class="govuk-body">one person</p>
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
+                <a class="govuk-link" href="/en/permissions/check/how_many_people">
                   Change<span class="govuk-visually-hidden"> contact details</span>
                 </a>
               </dd>
