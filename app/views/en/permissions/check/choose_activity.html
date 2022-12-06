@@ -1,5 +1,13 @@
 {% extends "nrw-layout.html" %}
 
+
+{% block beforeContent %}
+<a href="/en/permissions/start_check" class="govuk-back-link">
+  Back
+  <span class="govuk-visually-hidden"> to Check if you’re allowed to use our land start page</span>
+</a>
+{% endblock %}
+
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
