@@ -45,9 +45,7 @@
         </span>
       </summary>
       <div class="govuk-details__text">
-          <ul>Dog walking</ul>
-          <ul>horse riding</ul>
-          <ul>walking</ul>
+          
       </div>
     </details>
 
@@ -58,10 +56,36 @@
         </span>
       </summary>
       <div class="govuk-details__text">
-          <ul>hunting</ul>
-          <ul>Quad biking</ul>
+          
       </div>
     </details>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="activity">
+        Tell us what you want to do
+      </label>
+      <select class="govuk-select" id="activity" name="activity">
+        <option value="walking">walking</option>
+        <option value="horse-riding">horse riding</option>
+        <option valuse="walking">walking</option>
+        <option valuse="archery">archery</option>
+        <option valuse="organising-an-event">organising an event</option>
+        <option valuse="fishing">fishing</option>
+        <option valuse="foraging">foraging</option>
+        <option valuse="collecting-seaweed">collecting seaweed</option>
+        <option valuse="filming">filming</option>
+        <option valuse="weddings">weddings</option>
+        <option valuse="school-visits">school visits</option>
+        <option valuse="training">training</option>
+        <option valuse="doing-a-survey">doing a survey</option>
+        <option valuse="other">other</option>
+        <option valuse="dog-walking">dog walking</option>
+        <option valuse="horse-riding">horse riding</option>
+        <option valuse="walking">walking</option>
+        <option valuse="hunting">hunting</option>
+        <option valuse="quad-biking">quad biking</option>
+      </select>
+    </div>
 
   <div class="govuk-form-group">
     <label class="govuk-label" for="event-name">
@@ -79,4 +103,9 @@
 
 {% block pageScripts %}
 <script src="/public/javascripts/vendor/accessible-autocomplete.min.js"></script>
+<script>
+  accessibleAutocomplete.enhanceSelectElement({
+    selectElement: document.querySelector('#activity')
+  })
+</script>
 {% endblock %}
