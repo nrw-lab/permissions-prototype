@@ -35,4 +35,15 @@ router.get('/en/permissions/check/choose_site', function(req, res) {
     
 });
 
+router.get('/en/permissions/check/submit', function(req, res) {
+    const numOfPeople = req.session.data['how-many-people']
+
+    if (parseInt(numOfPeople) > 9) {
+        res.redirect('/en/permissions/check/ask_permission')
+    } else {
+        res.redirect('/en/permissions/check/no_permission')
+    }
+    
+});
+
 module.exports = router
