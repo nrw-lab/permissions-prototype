@@ -1,7 +1,64 @@
 {% extends "layout_unbranded.html" %}
 
 {% block content %}
-<h1 class="govuk-heading-l">Choose activity</h1>
+<h1 class="govuk-heading-l">What do you want to do?</h1>
+
+<details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Examples of what you can do
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+        <ul>walking</ul>
+        <ul>horse riding</ul>
+        <ul>walking</ul>
+        <ul>archery</ul>
+        <ul>organising an event</ul>
+        <ul>fishing</ul>
+        <ul>foraging</ul>
+        <ul>collecting seaweed</ul>
+        <ul>filming</ul>
+        <ul>weddings</ul>
+        <ul>school visits</ul>
+        <ul>training</ul>
+        <ul>doing a survey</ul>
+        <ul>other</ul>
+    </div>
+  </details>
+
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Examples of activities you don't need permission for
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+        <ul>Dog walking</ul>
+        <ul>horse riding</ul>
+        <ul>walking</ul>
+    </div>
+  </details>
+
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Examples of what you can't do
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+        <ul>hunting</ul>
+        <ul>Quad biking</ul>
+    </div>
+  </details>
+
+<div class="govuk-form-group">
+    <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+        Please enter your activity
+      </label>
+    </h1>
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </div>
 
 <a href="/en/permissions/check/are_you_charging" class="govuk-button">Will you be charging?</a>
 
