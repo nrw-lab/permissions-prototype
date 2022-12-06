@@ -1,21 +1,28 @@
-{% extends "layout_unbranded.html" %}
+{% extends "nrw-layout.html" %}
 
 {% block content %}
-<h1 class="govuk-heading-xl">Check if you’re allowed to use our land</h1>
 
-<p class="govuk-body">Use this service to check if you are allowed to do something on our land, such as:</p>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
 
-<ul class="govuk-list govuk-list--bullet">
-    <li>walking your dog</li>
-    <li>riding a horse</li>
-    <li>organising an event</li>
-    <li>filming or taking photographs</li>
-    <li>school visits</li>
-    <li>training</li>
-    <li>doing a survey</li>
-</ul>
+        <h1 class="govuk-heading-xl">Check if you’re allowed to use our land</h1>
+
+        <p class="govuk-body">Use this service to check if you are allowed to do something on our land, such as:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+            <li>walking your dog</li>
+            <li>riding a horse</li>
+            <li>organising an event</li>
+            <li>filming or taking photographs</li>
+            <li>school visits</li>
+            <li>training</li>
+            <li>doing a survey</li>
+        </ul>
 
 
-<a href="/en/permissions/check/choose_activity" class="govuk-button">Start now</a>
+        <a href="/en/permissions/check/choose_activity" class="govuk-button">Start now</a>
+
+    </div>
+</div>
 
 {% endblock %}
