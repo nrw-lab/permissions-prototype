@@ -11,16 +11,17 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    <div class="govuk-form-group">
-        <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="how-many-people">
-          How many people will be attending?
-          </label>
-        </h1>
-        <input class="govuk-input govuk-input--width-5" id="how-many-people" name="how-many-people" type="text">
-    </div>
+    <form action="/en/permissions/check/summary">
+      <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="how-many-people">
+            How many people will be attending?
+            </label>
+          </h1>
+          <input class="govuk-input govuk-input--width-5" id="how-many-people" name="how-many-people" type="text">
+      </div>
 
-    <a href="/en/permissions/check/summary" class="govuk-button">Continue</a>
-  
+      <button href="/en/permissions/check/summary" class="govuk-button">Continue</button>
+    </form>
   </div>
 </div>
 

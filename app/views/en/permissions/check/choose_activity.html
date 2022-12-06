@@ -14,34 +14,36 @@
 
   <h1 class="govuk-heading-l">What do you want to do?</h1>
 
-    <div class="govuk-form-group">
-      <label class="govuk-label" for="activity">
-        Tell us what you want to do
-      </label>
-      <select class="govuk-select" id="activity" name="activity">
-        <option value=""></option>
-        <option value="horse-riding">horse riding</option>
-        <option valuse="archery">archery</option>
-        <option valuse="organising-an-event">organising an event</option>
-        <option valuse="fishing">fishing</option>
-        <option valuse="foraging">foraging</option>
-        <option valuse="collecting-seaweed">collecting seaweed</option>
-        <option valuse="filming">filming</option>
-        <option valuse="weddings">weddings</option>
-        <option valuse="school-visits">school visits</option>
-        <option valuse="training">training</option>
-        <option valuse="doing-a-survey">doing a survey</option>
-        <option valuse="other">other</option>
-        <option valuse="dog-walking">dog walking</option>
-        <option valuse="horse-riding">horse riding</option>
-        <option valuse="walking">walking</option>
-        <option valuse="hunting">hunting</option>
-        <option valuse="quad-biking">quad biking</option>
-      </select>
-    </div>
+  <form action="/en/permissions/check/are_you_charging" class="govuk-form">
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="activity">
+          Tell us what you want to do
+        </label>
+        <select class="govuk-select" id="activity" name="activity">
+          <option value=""></option>
+          <option value="horse-riding">horse riding</option>
+          <option valuse="archery">archery</option>
+          <option valuse="organising-an-event">organising an event</option>
+          <option valuse="fishing">fishing</option>
+          <option valuse="foraging">foraging</option>
+          <option valuse="collecting-seaweed">collecting seaweed</option>
+          <option valuse="filming">filming</option>
+          <option valuse="weddings">weddings</option>
+          <option valuse="school-visits">school visits</option>
+          <option valuse="training">training</option>
+          <option valuse="doing-a-survey">doing a survey</option>
+          <option valuse="other">other</option>
+          <option valuse="dog-walking">dog walking</option>
+          <option valuse="horse-riding">horse riding</option>
+          <option valuse="walking">walking</option>
+          <option valuse="hunting">hunting</option>
+          <option valuse="quad-biking">quad biking</option>
+        </select>
+      </div>
 
-  <a href="/en/permissions/check/are_you_charging" class="govuk-button">Continue</a>
-
+    <button href="/en/permissions/check/are_you_charging" class="govuk-button">Continue</button>
+  </form>
+  
   </div>
 </div>
 

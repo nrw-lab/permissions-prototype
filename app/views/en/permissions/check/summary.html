@@ -21,7 +21,7 @@
                 What do you want to do?
               </dt>
               <dd class="govuk-summary-list__value">
-                walking
+                {{ data['activity'] }}
               </dd>
               <dd class="govuk-summary-list__actions">
                 <a class="govuk-link" href="/en/permissions/check/choose_activity">
@@ -60,7 +60,7 @@
                 How many people?
               </dt>
               <dd class="govuk-summary-list__value">
-                <p class="govuk-body">one person</p>
+                <p class="govuk-body">{{ data['how-many-people'] }}</p>
               </dd>
               <dd class="govuk-summary-list__actions">
                 <a class="govuk-link" href="/en/permissions/check/how_many_people">
