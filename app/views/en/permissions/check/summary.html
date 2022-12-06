@@ -7,8 +7,7 @@
     <main class="govuk-main-wrapper " id="main-content" role="main">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds-from-desktop">
-          <h1 class="govuk-heading-l">Check your details</h1>
-          <h2 class="govuk-heading-m">Application details</h2>
+          <h1 class="govuk-heading-l">Check your answers</h1>
           <dl class="govuk-summary-list govuk-!-margin-bottom-9">
             <div class="govuk-summary-list__row">
               <dt class="govuk-summary-list__key">
@@ -64,20 +63,14 @@
             </div>
           </dl>
           
-          <h2 class="govuk-heading-m">Now send your application</h2>
-          <p class="govuk-body">By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
-          <form action="/form-handler" method="post" novalidate>
-            <input type="hidden" name="answers-checked" value="true">
-            <button class="govuk-button" data-module="govuk-button">
-              Accept and send
-            </button>
+          <a href="/en/permissions/check/no_permission" class="govuk-button">Continue</a>
           </form>
         </div>
       </div>
     </main>
   </div>
 
- <a href="/en/permissions/check/no_permission" class="govuk-button">End</a>
+
 
 
 {% endblock %}
