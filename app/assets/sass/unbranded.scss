@@ -18,3 +18,9 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 @import "reskin/reskin";
 
 @import "vendor/accessible-autocomplete";
+
+.app-map-select {
+    display: block;
+    max-width: 300px;
+    margin-bottom: $govuk-gutter;
+}
