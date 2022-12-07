@@ -1,0 +1,102 @@
+$primary-color: #CCC;
+$radius: 5px;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+#iphone {
+  position: relative;
+  margin: 15px auto;
+  width: 376.0375px;
+  height: 794px;
+  display: block;
+  border: 2px solid $primary-color;
+  @include border-radius(55px);
+  
+  .button {
+  border: 2px solid $primary-color;
+  @include border-radius(4px 0 0 4px);
+  display: block;
+  width: 4px;
+  height: 32.5px;
+  position: absolute;
+
+    &#power {
+      height: 60px;
+      top: -36.5px;
+      right: 77.5px;
+      -moz-transform: scale(1) rotate(90deg);
+-webkit-transform: scale(1) rotate(90deg);
+-o-transform: scale(1) rotate(90deg);
+-ms-transform: scale(1) rotate(90deg);
+transform: scale(1) rotate(90deg);
+    }
+    
+    &#mute {
+      top: 110.5px;
+      left: -8px;
+    }
+
+    &#volUp {
+      top: 183.5px;
+      left: -8px;
+    }
+
+    &#volDown {
+      top: 250px;
+      left: -8px;
+    }
+  }
+ 
+  #proximitySensor {
+    display: block;
+    margin: 30px auto 0 auto;
+    width: 14px;
+    height: 14px;
+    border: 2px solid $primary-color;
+    @include border-radius(14px);
+  }
+  
+  #speaker{
+    width: 68px;
+    height: 15px;
+    border: 2px solid $primary-color;
+    @include border-radius(15px);
+    margin: 13.5px auto 20px auto;
+  }
+  
+  #screen {
+    position: relative;
+    width: 320px;
+    height: 568px;
+    border: 2px solid $primary-color;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #homeButton{
+    position: relative;
+    border: 2px solid $primary-color;
+    display: block;
+    width: 68.5px;
+    height: 68.5px;
+    @include border-radius(68.5px);
+    margin: 20px auto 0 auto;
+    
+    
+    #innerRing{
+      display: block;
+      position: relative;
+      margin: 3px auto 0 auto;
+      width: 58.5px;
+      height: 58.5px;
+      border: 2px solid $primary-color;
+      @include border-radius(55px);
+    }
+  }  
+}

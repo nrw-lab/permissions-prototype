@@ -18,6 +18,7 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 @import "reskin/reskin";
 
 @import "vendor/accessible-autocomplete";
+@import "vendor/iphone";
 
 @import "components/card";
 
@@ -25,4 +26,9 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
     display: block;
     max-width: 300px;
     margin-bottom: $govuk-gutter;
+}
+
+.app-reminder-text {
+    padding: 10px;
+    overflow-wrap: break-word;
 }
