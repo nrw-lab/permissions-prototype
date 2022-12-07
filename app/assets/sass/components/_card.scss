@@ -1,0 +1,22 @@
+.app-card {
+  border: 1px solid $govuk-border-colour;
+  margin-bottom: govuk-spacing(6);
+}
+
+.app-card__content {
+  padding: govuk-spacing(4);
+  & > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+.app-card__title {
+  @include govuk-font($size: 19, $weight: bold);
+  margin: 0;
+}
+
+.app-card__header {
+  background: govuk-colour("light-grey");
+  padding: govuk-spacing(3) govuk-spacing(4);
+  margin-bottom: govuk-spacing(0);
+}

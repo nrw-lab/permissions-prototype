@@ -19,6 +19,8 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 @import "vendor/accessible-autocomplete";
 
+@import "components/card";
+
 .app-map-select {
     display: block;
     max-width: 300px;
