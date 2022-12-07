@@ -1,5 +1,17 @@
 {% extends "nrw-layout.html" %}
 
 {% block content %}
-<p>You are not allowed to trail hunt on any of our land.</p>
+<h1 class="govuk-heading-xl">You are not allowed</h1>
+<div class="govuk-warning-text">
+    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+    <strong class="govuk-warning-text__text">
+      <span class="govuk-warning-text__assistive">Warning</span>
+      You are not allowed to trail hunt on any of our land.
+    </strong>
+</div>
+
+<p class="govuk-body">
+    Read more about <a href="https://naturalresources.wales/about-us/news/statements/exempt-hunting-on-the-nrw-managed-estate/?lang=en" class="govuk-link">hunting on NRW-managed land</a>
+</p>
+
 {% endblock %}
