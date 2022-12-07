@@ -1,7 +1,22 @@
-{% extends "layout_unbranded.html" %}
+{% extends "nrw-layout.html" %}
 
 {% block content %}
-<h1 class="govuk-heading-xl">2fa</h1>
 
-<a href="/en/permissions/renew/renewing" class="govuk-link">Login</a>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Confirm you can renew permission</h1>
+
+        <p class="govuk-body">To renew permission we need to confirm who you are. We have sent an access code to 07xxxxxxxxx.</p>
+
+        <div class="govuk-form-group">
+            <label class="govuk-label" for="width-10">
+            Enter access code
+            </label>
+            <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
+        </div>
+
+        <a href="/en/permissions/certificate/renewing" class="govuk-button">Confirm</a>
+
+    </div>
+</div>
 {% endblock %}
