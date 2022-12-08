@@ -1,7 +1,69 @@
 {% extends "nrw-layout.html" %}
 
 {% block content %}
-<h1 class="govuk-heading-xl">Pay</h1>
+<h1 class="govuk-heading-xl">Pay for renewal</h1>
+
+<p class="govuk-body">You need to pay £50 to renew your permission.</p>
+
+<h2 class="govuk-heading-l">Enter card details</h2>
+
+<form action="" class="govuk-form">
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          Card number
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+    </div>
+
+    <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+          <legend class="govuk-fieldset__legend">
+            <h4 class="govuk-fieldset__heading">
+              Expiry date
+            </h4>
+          </legend>
+          <div id="passport-issued-hint" class="govuk-hint">
+            For example, 09/22
+          </div>
+          <div class="govuk-date-input" id="passport-issued">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+              </div>
+            </div>
+            <span>/</span>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          Name on card
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+    </div>
+
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="width-5">
+          Card security number
+        </label>
+        <div id="event-name-hint" class="govuk-hint">
+            The last 3 digits on the back of the card
+        </div>
+        <input class="govuk-input govuk-input--width-5" id="width-5" name="width-5" type="text">
+    </div>
+</form>
 
 <a href="/en/permissions/certificate/renewed-certificate" class="govuk-button">Confirm payment</a>
 {% endblock %}
