@@ -1,12 +1,13 @@
 
 $qrcolor: #000;
 .da-code{
+  display: inline-block;
   position:relative;
   font-size:8px; /* change the size of this to see how ralph will scale up or down */
   height: 1em;
   width: 1em;
-  margin:0 34em 34em 0;
-  float:left;
+  min-width: 1em;
+  margin: 1em 29em 27em 1em;
   box-shadow:
     /* row 1 */
     8em    0 $qrcolor,

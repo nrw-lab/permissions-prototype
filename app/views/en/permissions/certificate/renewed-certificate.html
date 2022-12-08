@@ -1,7 +1,58 @@
 {% extends "nrw-layout.html" %}
 
 {% block content %}
-<h1 class="govuk-heading-xl">Renewed certificate</h1>
+<h1 class="govuk-heading-xl">Certificate</h1>
 
-<div id="qr8" class="da-code"></div>
+<div class="app-card">
+    <div class="app-card__header">
+        <h2 class="app-card__title">#0001289345</h2>
+    </div>
+
+    <div class="app-card__content app-card__content--2-col">
+        <div id="qr8" class="da-code"></div>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Jo Andrews
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                    Type of permission
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    Individual horse riding
+                </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                    Location
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    <a href="#">Coed Nercwys Forest</a>
+                </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                    From
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    18 December 2022
+                </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                    To
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    18 December 2023
+                </dd>
+            </div>
+        </dl>
+    </div>
+</div>
+
 {% endblock %}
