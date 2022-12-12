@@ -33,3 +33,25 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
     padding: 10px;
     overflow-wrap: break-word;
 }
+
+.nrw-prototype-banner {
+  margin: 5px 0;
+  border-bottom: 1px solid var(--nrw-dark-green);
+}
+
+.nrw-tag {
+  --tag-background: var(--nrw-dark-green);
+  --tag-colour: #fff;
+  display: inline-block;
+  padding: 5px 8px;
+  background: var(--tag-background);
+  color: var(--tag-colour);
+}
+
+.nrw-tag__text {
+  padding-left: 5px;
+
+  @include mq($from: tablet) {
+    padding-left: 10px;
+  }
+}
