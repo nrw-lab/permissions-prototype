@@ -1,0 +1,19 @@
+.app-language-switcher {
+  --language-switcher-background: var(--bold-text-colour);
+  --language-switcher-hover-background: var(--nrw-dark-green);
+  --language-switcher-inactive-colour: var(--nrw-grey-light);
+  float: right;
+  padding: 0 8px;
+  background: var(--language-switcher-background);
+  color: var(--page-background-colour) !important;
+  line-height: govuk-em(30, 16);
+  text-decoration: none;
+
+  &:hover {
+    background: var(--language-switcher-hover-background);
+  }
+
+  &[href="#"] {
+    color: var(--language-switcher-inactive-colour) !important;
+  }
+}

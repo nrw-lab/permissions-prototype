@@ -1,0 +1,23 @@
+{% macro nrwHeader(params) %}
+
+  {% from "components/header/macro.njk" import appHeader %}
+  {% from "components/language-switcher/macro.njk" import appLanguageSwitcher %}
+
+  {{ appHeader({
+    containerClasses: "govuk-width-container",
+    site_name: "NRW Permissions",
+    bilingual: {
+      html: appLanguageSwitcher({
+        lang: params.lang,
+        href: params.alternative.href
+      })
+    }
+  }) }}
+  <div class="govuk-width-container">
+    <p class="govuk-body nrw-prototype-banner">
+      <span class="nrw-tag">Prototype</span>
+      <span class="nrw-tag__text">This is a proof of concept to help us test ideas.</span>
+    </p>
+  </div>
+
+{% endmacro %}

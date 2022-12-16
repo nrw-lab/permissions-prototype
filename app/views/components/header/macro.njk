@@ -18,7 +18,7 @@
         {% endif %}
       </a>
     </div>
-    {% if params.serviceName or params.navigation  %}
+    {% if params.serviceName or params.navigation or params.bilingual  %}
     <div class="govuk-header__content">
     {% if params.serviceName %}
     {% if params.serviceUrl %}
@@ -51,6 +51,9 @@
         {% endfor %}
       </ul>
     </nav>
+    {% endif %}
+    {% if params.bilingual %}
+      {{ params.bilingual.html }}
     {% endif %}
     </div>
     {% endif %}

@@ -22,6 +22,7 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 @import "vendor/qr-code";
 
 @import "components/card";
+@import "components/language-switcher";
 
 .app-map-select {
     display: block;

@@ -1,0 +1,11 @@
+{% macro appLanguageSwitcher(params) %}
+<a class="app-language-switcher" href="{{ params.href | default('#') }}">
+    {% if params.lang == 'cy' %}
+    <span class="govuk-visually-hidden">View in </span>
+    English
+    {% else %}
+    <span class="govuk-visually-hidden">View in </span>
+    Cymraeg
+    {% endif %}
+</a>
+{% endmacro %}
